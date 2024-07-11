@@ -1,62 +1,61 @@
-## Woovi Challenge - Crud Bank GraphQL Relay
-Woovi is a Startup that offer solutions on top of payments such as Pix and Credit Card.
+## Desafio Woovi - Crud Bank GraphQL Relay
+A Woovi é uma startup que oferece soluções no topo de pagamentos como Pix e Cartão de Crédito.
 
-Today we have two products: Woovi and OpenPix
-- [Woovi](https://www.woovi.com)
-- [OpenPix](https://www.openpix.com.br)
+Atualmente temos dois produtos: Woovi e OpenPix
 
-## Challenge
-Our challenge is a replica of our day-to-day. The same consists of building a CRUD of a bank based on our technologies.
+Woovi
+OpenPix
 
-In addition to technology, the challenge takes you to immersion in a work routine at a startup. When talking about startup, understand that we are one because we are building something new and without definitions previously defined by other people. So our routine is to code reasonably well. But more than that, unlocking the business and making the best decision to deliver what the customer needs.
+## Desafio
+Nosso desafio replica nosso dia-a-dia. Consiste na construção de um CRUD de um banco baseado em nossas tecnologias.
 
-### Challenge Stack
-### [Stack](https://dev.to/woovi/woovi-stack-5fom) - https://dev.to/woovi/woovi-stack-5fom
-- Backend: MongoDB, NodeJS, Koajs, GraphQL
-- Frontend: React, Relay
-- Tests: Jest
+Além da tecnologia, o desafio leva você à imersão na rotina de trabalho em uma startup. Ao falar de startup, entenda que somos uma porque estamos construindo algo novo e sem definições previamente definidas por outras pessoas. Então nossa rotina é codificar de maneira razoavelmente boa. Mas mais do que isso, desbloqueando o negócio e tomando a melhor decisão para entregar o que o cliente precisa.
 
-#### Backend
-The backend must be a GraphQL API that handles all the required items above.
+## Stack do Desafio
+Stack - https://dev.to/woovi/woovi-stack-5fom
+Backend: MongoDB, NodeJS, Koajs, GraphQL
+Frontend: React, Relay
+Testes: Jest
+Backend
+O backend deve ser uma API GraphQL que manipula todos os itens necessários mencionados acima.
 
 Stack: NodeJs, KoaJs, MongoDB, GraphQL
 
-Plus: Use Node and Connection from Relay to handle get collection and lists.
+Além disso: Use Node e Connection do Relay para lidar com coleções e listas.
 
-#### Login and Register Mutations
-- It must have available a Mutation to register a new User.
-- This mutation must return the user logged in when successfully.
-- It must be available as a Mutation to log in as a User.
-- It must handle token authentication for login.
-- It must persist the token between requests.
-- It must create the token with JWT authentication.
-- The token is must be transferred by
-- It must create a user with an account
+Mutations de Login e Registro
+Deve haver uma Mutation disponível para registrar um novo usuário.
+Esta mutation deve retornar o usuário logado com sucesso.
+Deve estar disponível como Mutation para fazer login como usuário.
+Deve lidar com autenticação de token para o login.
+Deve persistir o token entre requisições.
+Deve criar o token com autenticação JWT.
+O token deve ser transferido por ...
+Deve criar um usuário com uma conta
 
-#### User Model
-- It must have a first name, tax id (cpf/cnpj field), and password.
-- The password must be encrypted.
-- It must not be possible to register more than one user with the same tax id.
+## Modelo de Usuário
+Deve ter um primeiro nome, CPF (campo de CPF/CNPJ) e senha.
+A senha deve ser criptografada.
+Não deve ser possível registrar mais de um usuário com o mesmo CPF.
 
-#### Account Model
-- unique ID to be used as idempotency id.
-- account number.
-- user ID owner of account.
-- it must be able to have one account per user.
-- it must not be able to duplicate accounts.
-- it must have the calculation of balance using a ledger strategy.
+## Modelo de Conta
+ID único a ser usado como ID de idempotência.
+Número da conta.
+ID do usuário proprietário da conta.
+Deve ser capaz de ter uma conta por usuário.
+Não deve ser possível duplicar contas.
+Deve ter o cálculo do saldo usando uma estratégia de livro-razão.
 
-#### Transaction Model
-- Sender: who is sending the money
-- Receiver: who is receiving the money
-- It must be idempotent
-- Value: in cents or decimal128
+## Modelo de Transação
+Remetente: quem está enviando o dinheiro
+Destinatário: quem está recebendo o dinheiro
+Deve ser idempotente
+Valor: em centavos ou decimal128
 
-#### Deploy
-The backend must be deployed where it can be accessible.
-
-#### How to guarantee a better chance of being hired by backend?
-- Expose a GraphQL Playground
-- Generate a postman JSON to be able to import and make calls to the Backend GraphQL API
-- It uses graphql-HTTP
-- It has a test with Jest or a Test Runner of choice
+## Deploy
+O backend deve ser implantado onde pode ser acessado.
+Como garantir uma melhor chance de ser contratado pelo backend?
+Exponha um Playground GraphQL
+Gere um JSON do postman para poder importar e fazer chamadas para a API GraphQL do Backend
+Use graphql-HTTP
+Tenha um teste com Jest ou um Test Runner de escolha
